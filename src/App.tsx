@@ -70,8 +70,8 @@ function App() {
   ];
 
   const bubbleItems = [
-    { icon: <span className="text-sm text-[#0a0a0a] bg-white p-1 rounded shadow-[0_0_10px_white]">GH</span>,        label: 'GitHub',   onClick: () => window.open('https://github.com/TEJASPATIL1357', '_blank') },
-    { icon: <span className="text-sm text-white bg-heist-red p-1 rounded shadow-[0_0_10px_#e50914]">LI</span>,      label: 'LinkedIn', onClick: () => window.open('https://www.linkedin.com/in/tejas-patil-024ab0246', '_blank') },
+    { icon: <span className="text-sm text-[#0a0a0a] bg-white p-1 rounded shadow-[0_0_10px_white]">GH</span>,        label: 'GitHub',   onClick: () => window.open('https://github.com/vidula66', '_blank')},
+    { icon: <span className="text-sm text-white bg-heist-red p-1 rounded shadow-[0_0_10px_#e50914]">LI</span>,      label: 'LinkedIn', onClick: () => window.open('https://www.linkedin.com/in/vidula-yeole-b131b3318/', '_blank') },
     { icon: <span className="text-sm text-[#0a0a0a] bg-heist-gold p-1 rounded shadow-[0_0_10px_#ffc107]">CV</span>, label: 'Resume',   onClick: () => document.getElementById('cv')?.scrollIntoView({ behavior: 'smooth' }) },
   ];
 

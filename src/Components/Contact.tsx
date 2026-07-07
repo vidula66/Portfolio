@@ -60,7 +60,7 @@ const handleChange = (
 <input
   type="hidden"
   name="_next"
-  value="http://localhost:5173/#contact"
+  value="https://vidula66.github.io/Portfolio/index.html"
 />
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
