@@ -1,0 +1,16 @@
+.laser-flow-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.laser-beam {
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 100px;
+  border-radius: 999px;
+}

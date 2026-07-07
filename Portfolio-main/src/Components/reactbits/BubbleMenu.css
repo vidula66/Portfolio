@@ -1,0 +1,60 @@
+.bubble-menu-wrapper {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+}
+
+.bubble-trigger {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e50914, #b20710);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);
+  cursor: pointer;
+  border: none;
+  z-index: 10;
+}
+
+.bubble-items {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.bubble-item {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(15, 15, 25, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(229, 9, 20, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fca5a5;
+  cursor: pointer;
+  right: 4px;
+}
+
+.bubble-label {
+  position: absolute;
+  right: 60px;
+  background: rgba(0,0,0,0.8);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.bubble-item:hover .bubble-label {
+  opacity: 1;
+}
