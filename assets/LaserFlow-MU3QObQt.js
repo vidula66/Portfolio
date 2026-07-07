@@ -1,0 +1,1 @@
+import{j as e,m as o}from"./vendor-framer-7BaAQzny.js";const r=({className:s="",color:a="#e50914"})=>e.jsx("div",{className:`laser-flow-container ${s}`,children:e.jsx(o.div,{className:"laser-beam",style:{backgroundColor:a,boxShadow:`0 0 15px ${a}`},animate:{top:["-20%","120%"],opacity:[0,1,1,0]},transition:{duration:3,repeat:1/0,ease:"linear"}})});export{r as L};
