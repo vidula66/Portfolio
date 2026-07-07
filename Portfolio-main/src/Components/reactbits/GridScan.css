@@ -1,0 +1,37 @@
+.grid-scan-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #000;
+  z-index: -1;
+}
+
+.grid-scan-cells {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+.grid-scan-cell {
+  border: 1px solid rgba(229, 9, 20, 0.3);
+}
+
+.grid-scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to bottom, transparent, #e50914, transparent);
+  box-shadow: 0 0 20px #e50914;
+  animation: scan 4s linear infinite;
+  z-index: 2;
+}
+
+@keyframes scan {
+  0% { top: -10%; }
+  100% { top: 110%; }
+}

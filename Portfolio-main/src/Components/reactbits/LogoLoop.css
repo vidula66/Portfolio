@@ -1,0 +1,44 @@
+.logo-loop-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 2rem 0;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.logo-loop-inner {
+  display: flex;
+  width: max-content;
+  gap: 3rem;
+  animation: loop linear infinite;
+}
+
+.pause-on-hover:hover .logo-loop-inner {
+  animation-play-state: paused;
+}
+
+.logo-loop-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}
+
+.logo-loop-item img {
+  height: 100%;
+  width: auto;
+  filter: grayscale(1) brightness(0.8);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.logo-loop-item:hover img {
+  filter: grayscale(0) brightness(1.2);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@keyframes loop {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

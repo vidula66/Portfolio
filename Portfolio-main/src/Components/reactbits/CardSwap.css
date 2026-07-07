@@ -1,0 +1,34 @@
+.card-swap-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-swap-item {
+  width: 100%;
+  height: 100%;
+}
+
+.card-swap-indicator {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+}
+
+.indicator-dot.active {
+  background: #e50914;
+  box-shadow: 0 0 10px #e50914;
+}
